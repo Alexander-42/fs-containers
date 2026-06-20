@@ -1,0 +1,45 @@
+Script started on 2026-06-21 01:20:56+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="116" LINES="61"]
+[?2004h]0;alexander@Alex-debian: ~/fs-containers/answers[01;32malexander@Alex-debian[00m:[01;34m~/fs-containers/answers[00m$ sudo dok[Kcker run -it ubuntu bash
+[?2004l[sudo] password for alexander: 
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2Kd1f56e4c7f2f: Pulling fs layer [1B
+[1A[2K81e2f2053c8f: Pulling fs layer [1B[2A[2Kd1f56e4c7f2f: Downloading [==================================================>]     388B/388B[2B[2A[2Kd1f56e4c7f2f: Download complete [2B[1A[2K81e2f2053c8f: Downloading [=>                                                 ]  1.049MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [===>                                               ]  3.146MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [=====>                                             ]  4.194MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [======>                                            ]  5.243MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [=======>                                           ]  6.291MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [==========>                                        ]  8.389MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [============>                                      ]  10.49MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [=============>                                     ]  11.53MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [===============>                                   ]  12.58MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [=================>                                 ]  14.68MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [=================>                                 ]  14.68MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [====================>                              ]  16.78MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [======================>                            ]  18.87MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [=========================>                         ]  20.97MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [==========================>                        ]  22.02MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [=============================>                     ]  24.12MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [==============================>                    ]  25.17MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [===============================>                   ]  26.21MB/41.56MB[1B[1A[2K81e2f2053c8f: Downloading [==================================>                ]  28.31MB/41.56MB[1B
+[1A[2K107e4f1717f2: Downloading [==============>                                    ]  1.049MB/3.705MB[1B[2A[2K81e2f2053c8f: Downloading [==================================>                ]  28.31MB/41.56MB[2B[1A[2K107e4f1717f2: Downloading [==============>                                    ]  1.049MB/3.705MB[1B[2A[2K81e2f2053c8f: Downloading [===================================>               ]  29.36MB/41.56MB[2B[1A[2K107e4f1717f2: Downloading [==============>                                    ]  1.049MB/3.705MB[1B[2A[2K81e2f2053c8f: Downloading [===================================>               ]  29.36MB/41.56MB[2B[1A[2K107e4f1717f2: Downloading [============================>                      ]  2.097MB/3.705MB[1B[2A[2K81e2f2053c8f: Downloading [=====================================>             ]  31.46MB/41.56MB[2B[1A[2K107e4f1717f2: Downloading [==========================================>        ]  3.146MB/3.705MB[1B[2A[2K81e2f2053c8f: Downloading [=====================================>             ]  31.46MB/41.56MB[2B[1A[2K107e4f1717f2: Downloading [==================================================>]  3.705MB/3.705MB[1B[2A[2K81e2f2053c8f: Downloading [=======================================>           ]  32.51MB/41.56MB[2B[1A[2K107e4f1717f2: Download complete [1B[2A[2K81e2f2053c8f: Downloading [=========================================>         ]   34.6MB/41.56MB[2B[2A[2K81e2f2053c8f: Downloading [============================================>      ]   36.7MB/41.56MB[2B[2A[2K81e2f2053c8f: Downloading [==============================================>    ]   38.8MB/41.56MB[2B[2A[2K81e2f2053c8f: Downloading [=================================================> ]  40.89MB/41.56MB[2B[2A[2K81e2f2053c8f: Download complete [2B[2A[2K81e2f2053c8f: Extracting 1 s[2B[2A[2K81e2f2053c8f: Extracting 1 s[2B[2A[2K81e2f2053c8f: Extracting 1 s[2B[2A[2K81e2f2053c8f: Extracting 1 s[2B[2A[2K81e2f2053c8f: Extracting 1 s[2B[2A[2K81e2f2053c8f: Extracting 1 s[2B[3A[2Kd1f56e4c7f2f: Pull complete [3B[2A[2K81e2f2053c8f: Pull complete [2BDigest: sha256:53958ec7b67c2c9355df922dd08dbf0360611f8c3cdb656875e81873db9ffdba
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@a42818e54ca1: /root@a42818e54ca1:/# mkdir ust r/src/app
+[?2004l[?2004h]0;root@a42818e54ca1: /root@a42818e54ca1:/# touch usr/src/app/index.js
+[?2004l[?2004h]0;root@a42818e54ca1: /root@a42818e54ca1:/# [Keq xit    ls
+[?2004l[0m[01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+[?2004h]0;root@a42818e54ca1: /root@a42818e54ca1:/# cd usr
+[?2004l[?2004h]0;root@a42818e54ca1: /usrroot@a42818e54ca1:/usr# cd    ls
+[?2004l[0m[01;34mbin[0m  [01;34mgames[0m  [01;34minclude[0m  [01;34mlib[0m  [01;34mlib64[0m  [01;34mlibexec[0m  [01;34mlocal[0m  [01;34msbin[0m  [01;34mshare[0m  [01;34msrc[0m
+[?2004h]0;root@a42818e54ca1: /usrroot@a42818e54ca1:/usr# cd app
+[?2004lbash: cd: app: No such file or directory
+[?2004h]0;root@a42818e54ca1: /usrroot@a42818e54ca1:/usr# cd .. .
+[?2004l[?2004h]0;root@a42818e54ca1: /root@a42818e54ca1:/# mkdir app
+[?2004l[?2004h]0;root@a42818e54ca1: /root@a42818e54ca1:/# ls
+[?2004l[0m[01;34mapp[0m  [01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+[?2004h]0;root@a42818e54ca1: /root@a42818e54ca1:/# cd ..
+[?2004l[?2004h]0;root@a42818e54ca1: /root@a42818e54ca1:/# rmdir app
+[?2004l[?2004h]0;root@a42818e54ca1: /root@a42818e54ca1:/# cd    ls
+[?2004l[0m[01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib64[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+[?2004h]0;root@a42818e54ca1: /root@a42818e54ca1:/# cd usr
+[?2004l[?2004h]0;root@a42818e54ca1: /usrroot@a42818e54ca1:/usr# cd src
+[?2004l[?2004h]0;root@a42818e54ca1: /usr/srcroot@a42818e54ca1:/usr/src# md kdir app
+[?2004lmkdir: app: File exists
+[?2004h]0;root@a42818e54ca1: /usr/srcroot@a42818e54ca1:/usr/src# cd    ls
+[?2004l[0m[01;34mapp[0m
+[?2004h]0;root@a42818e54ca1: /usr/srcroot@a42818e54ca1:/usr/src# cd app
+[?2004l[?2004h]0;root@a42818e54ca1: /usr/src/approot@a42818e54ca1:/usr/src/app# cd    ls
+[?2004lindex.js
+[?2004h]0;root@a42818e54ca1: /usr/src/approot@a42818e54ca1:/usr/src/app# cd ..
+[?2004l[?2004h]0;root@a42818e54ca1: /usr/srcroot@a42818e54ca1:/usr/src# cd ..
+[?2004l[?2004h]0;root@a42818e54ca1: /usrroot@a42818e54ca1:/usr# cd ..
+[?2004l[?2004h]0;root@a42818e54ca1: /root@a42818e54ca1:/# exit
+[?2004lexit
+[?2004h]0;alexander@Alex-debian: ~/fs-containers/answers[01;32malexander@Alex-debian[00m:[01;34m~/fs-containers/answers[00m$ exit
+[?2004lexit
+
+Script done on 2026-06-21 01:23:41+03:00 [COMMAND_EXIT_CODE="0"]
