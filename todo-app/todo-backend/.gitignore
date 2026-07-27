@@ -57,5 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# REST client scratch requests
+rest/
+
 # next.js build output
 .next

@@ -1,0 +1,93 @@
+Script started on 2026-07-22 06:58:22+03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="211" LINES="58"]
+[?2004h]0;alexander@Alex-debian: ~/fs-containers[01;32malexander@Alex-debian[00m:[01;34m~/fs-containers[00m$ sudo cok[K[Kdo[K[K[Kdokcer[K[K[K[Kcker exet[Kc -it todo-backend-mongo-1 bash
+[?2004l[sudo] password for alexander: 
+Sorry, try again.
+[sudo] password for alexander: 
+[?2004hroot@fd925155775a:/# mongosh
+[?2004l]0;mongosh mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	6a60401758e8b94afe0abb2d
+Connecting to:		[1m[32mmongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.9.2[0m
+Using MongoDB:		undefined
+[1m[33mUsing Mongosh[0m:		2.9.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+[1G[0J [1G[?2004h[1G[0Jtest> [7Gshow b[1G[0Jtest> show [12Gdbs
+Uncaught [1m[31mMongoServerError[0m[1m[31m[Unauthorized][0m: Command listDatabases requires authentication
+[1G[0Jtest> [7Gq[1G[0Jtest> [7Gquit
+[?2004l]0;[?2004hroot@fd925155775a:/# mongosh -u too   root t -  p example    
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	6a604073bd828b5d76305a75
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.9.2[0m
+Using MongoDB:		8.2.11
+[1m[33mUsing Mongosh[0m:		2.9.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+[1G[0J [1G[?2004h[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2026-07-22T03:56:22.043+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2026-07-22T03:56:22.254+00:00: Soft rlimits for open file descriptors too low
+   2026-07-22T03:56:22.254+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2026-07-22T03:56:22.254+00:00: We suggest setting the contents of sysfsFile to 0.
+   2026-07-22T03:56:22.254+00:00: We suggest setting swappiness to 0 or 1, as swapping can cause performance problems.
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m         12.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   40.00 KiB
+[1G[0Jtest> [7Guse the data[1G[0Jtest> use the dat[18G[1G[0Jtest> use the da[17G[1G[0Jtest> use the d[16G[1G[0Jtest> use the [15G[1G[0Jtest> use the[14G_database
+switched to db the_database
+[1G[0Jthe_database> [15Gshow collecit[1G[0Jthe_database> show colleci[27G[1G[0Jthe_database> show collec[26Gtions
+[1mtodos[0m
+[1G[0Jthe_database> [15Gdb.toddos.find({}=[1G[0Jthe_database> db.toddos.find({}[32G)
+
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.toddos.find({})[33G[1D[1G[0Jthe_database> db.toddos.find[44m([49m{})[32G[1D[1G[0Jthe_database> db.toddos.find([44m{[49m})[31G[1D[1G[0Jthe_database> db.toddos.find({[44m}[49m)[30G[1D[1G[0Jthe_database> db.toddos.find({}[44m)[49m[29G[1D[1G[0Jthe_database> db.toddos.find({})[28G[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.find({})[21G[11C
+[
+  {
+    _id: ObjectId([32m'6a603f6496f9e5568f62f5c2'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'6a603f6496f9e5568f62f5c3'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gdb.todos.create({text[33mtext[39m: [32m'[39m[32mw[39m[32mr[39m[32mi[39m[32mt[39m[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'wri[39m[42G[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'wr[39m[41G[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'w[39m[40G[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'[39m[39G[32mI[39m[32mn[39m[32mc[39m[32mr[39m[32me[39m[32ma[39m[32mt[39m[32me[39m[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'Increat[39m[46G[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'Increa[39m[45G[32ms[39m[32me[39m [32mt[39m[32mh[39m[32me[39m [32mn[39m[32mu[39m[32mm[39m[32mb[39m[32me[39m[32mr[39m [32mo[39m[32mf[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m[32ms[39m [32mi[39m[32mn[39m [32mm[39m[32my[39m [32mt[39m[32mo[39m[32mo[39m[32ml[39m [32mb[39m[32me[39m[32ml[39m[32mt[39m[32m'[39m, d[36mdo[39mdone: dal[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: da[94G[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: d[93G[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [92Gfals[33mfalse[39m})
+Uncaught [1m[31mTypeError[0m: db.todos.create is not a function
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m})[99G[1D[1G[0Jthe_database> db.todos.create[44m([49m{[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m})[98G[1D[1G[0Jthe_database> db.todos.create([44m{[49m[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m})[97G[1D[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m})[96G[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.create({[33mtext[39m: [44m[32m'[49mIncrease the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m})[83G[1D[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m})[82G[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'Increase the number of tools in my tool belt[44m'[39m[49m, [33mdone[39m: [33mfalse[39m})[38G[1D[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m})[37G[1D[1D[1D[1D[1D[1D[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m[44m}[49m)[31G[1D[1G[0Jthe_database> db.todos.create({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[30G[1G[0Jthe_database> db.todos.creat({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[29G[1G[0Jthe_database> db.todos.crea({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[28G[1G[0Jthe_database> db.todos.cre({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[27G[1G[0Jthe_database> db.todos.cr({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[26G[1G[0Jthe_database> db.todos.c({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[25G[1G[0Jthe_database> db.todos.({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[24G[1G[0Jthe_database> db.todos({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[23G[1G[0Jthe_database> db.todos.({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[24G[1G[0Jthe_database> db.todos.i({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[25G[1G[0Jthe_database> db.todos.in({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[26G[1G[0Jthe_database> db.todos.ins({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[27G[1G[0Jthe_database> db.todos.inse({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[28G[1G[0Jthe_database> db.todos.inser({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[29G[1G[0Jthe_database> db.todos.insert({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[30G[1G[0Jthe_database> db.todos.insertO({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[31G[1G[0Jthe_database> db.todos.insertOn({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[32G[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m}[44m)[49m[33G[69C[1G[0Jthe_database> db.todos.insertOne({[33mtext[39m: [32m'Increase the number of tools in my tool belt'[39m, [33mdone[39m: [33mfalse[39m})[102G
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'6a604112bd828b5d76305a76'[39m)
+}
+[1G[0Jthe_database> [15Gshow dbs[1G[0Jthe_database> show db[22G[1G[0Jthe_database> show d[21G[1G[0Jthe_database> show [20G[1G[0Jthe_database> show[19G[1G[0Jthe_database> sho[18G[1G[0Jthe_database> sh[17G[1G[0Jthe_database> s[16G[1G[0Jthe_database> [15Gdb.todos.din[1G[0Jthe_database> db.todos.di[26G[1G[0Jthe_database> db.todos.d[25G[1G[0Jthe_database> db.todos.[24Gfind({})
+[
+  {
+    _id: ObjectId([32m'6a603f6496f9e5568f62f5c2'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'6a603f6496f9e5568f62f5c3'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  },
+  {
+    _id: ObjectId([32m'6a604112bd828b5d76305a76'[39m),
+    text: [32m'Increase the number of tools in my tool belt'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004l]0;[?2004hroot@fd925155775a:/# exit
+[?2004lexit
+[?2004h]0;alexander@Alex-debian: ~/fs-containers[01;32malexander@Alex-debian[00m:[01;34m~/fs-containers[00m$ exit
+[?2004lexit
+
+Script done on 2026-07-22 07:17:12+03:00 [COMMAND_EXIT_CODE="0"]
