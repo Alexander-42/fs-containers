@@ -1,10 +1,12 @@
+// Runs in mongosh via /docker-entrypoint-initdb.d, so the mongo container's
+// own environment is readable here -- keeps credentials out of version control
 db.createUser({
-  user: 'the_username',
-  pwd: 'the_password',
+  user: process.env.MONGO_APP_USERNAME,
+  pwd: process.env.MONGO_APP_PASSWORD,
   roles: [
     {
       role: 'dbOwner',
-      db: 'the_database',
+      db: process.env.MONGO_INITDB_DATABASE,
     },
   ],
 });

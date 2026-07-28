@@ -9,7 +9,7 @@ services:
       - /usr/src/app/node_modules # Keep the image's node_modules from being shadowed by the mount
     environment:
       - VITE_BACKEND_URL=/api/
-    container_name: todo-front-dev # This will name the container hello-front-dev
+    container_name: todo-front-dev
   
   mongo:
     build:
@@ -19,6 +19,8 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
       MONGO_INITDB_DATABASE: the_database
+      MONGO_APP_USERNAME: the_username
+      MONGO_APP_PASSWORD: the_password
     volumes:
       - mongo_data:/data/db
 
