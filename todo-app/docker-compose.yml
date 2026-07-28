@@ -7,12 +7,14 @@ services:
     build:
       context: ./todo-backend/mongo
     image: initialized_mongo
+    # A local .env overrides these; the fallbacks exist so throwaway
+    # environments without one (CI) still come up with a working database
     environment:
-      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USERNAME}
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
-      MONGO_INITDB_DATABASE: ${MONGO_DATABASE}
-      MONGO_APP_USERNAME: ${MONGO_APP_USERNAME}
-      MONGO_APP_PASSWORD: ${MONGO_APP_PASSWORD}
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USERNAME:-root}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD:-insecure-default}
+      MONGO_INITDB_DATABASE: ${MONGO_DATABASE:-production_db}
+      MONGO_APP_USERNAME: ${MONGO_APP_USERNAME:-todo_app}
+      MONGO_APP_PASSWORD: ${MONGO_APP_PASSWORD:-insecure-default}
     volumes:
       - mongo_data:/data/db
     restart: unless-stopped
@@ -40,7 +42,7 @@ services:
     build:
       context: ./todo-backend/
     environment:
-      MONGO_URL: mongodb://${MONGO_APP_USERNAME}:${MONGO_APP_PASSWORD}@mongo:27017/${MONGO_DATABASE}
+      MONGO_URL: mongodb://${MONGO_APP_USERNAME:-todo_app}:${MONGO_APP_PASSWORD:-insecure-default}@mongo:27017/${MONGO_DATABASE:-production_db}
       REDIS_URL: redis://redis:6379
     restart: unless-stopped
 
